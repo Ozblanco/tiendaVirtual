@@ -32,12 +32,19 @@
       {{ page }}
     </ion-card-title>
   </ion-card> -->
-
+ 
   <ion-slides class="slade-full" #slides pager="false" [options]="slideOpts" (ionSlideDidChange)="slideChange(slides)" (ionSlidesDidLoad)="slideChange(slides)">
-    <ion-slide>
-      <div>
+    <ion-slide class="first__slide">
+      <!-- <div> -->
         <app-slider-inicio></app-slider-inicio>
-      </div>
+      <!-- </div> -->
+      <!-- <div class="container__slide">
+        <ion-slides>
+          <ion-slide *ngFor="let item of items">
+            {{item}}
+          </ion-slide>
+        </ion-slides>
+      </div> -->
     </ion-slide>
     <ion-slide>
       <app-slider-categorias></app-slider-categorias>
@@ -52,5 +59,11 @@
       <h1>Slide 5</h1>
     </ion-slide>
   </ion-slides>
+  <!-- <div class="container__slide">
+    <div *ngFor="let item of items">
+      {{item}}
+    </div>
+  </div> -->
+  
 
 </ion-content>

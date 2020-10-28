@@ -1,4 +1,4 @@
-<ion-slides #slides pager="false" [options]="slideOptions" (ionSlideDidChange)="slideChange(slides)" (ionSlidesDidLoad)="slideChange(slides)"> 
+<!-- <ion-slides #slides pager="false" [options]="slideOptions" (ionSlideDidChange)="slideChange(slides)" (ionSlidesDidLoad)="slideChange(slides)"> 
   <ion-slide class="slade1">
     <h1>Slide 1</h1>
   </ion-slide>
@@ -8,4 +8,12 @@
   <ion-slide class="slade3">
     <h1>Slide 3</h1>
   </ion-slide>
-</ion-slides>
+</ion-slides> -->
+
+<div class="container__slide">
+  <ion-slides #slides pager="false" [options]="slideOptions" (ionSlideDidChange)="slideChange(slides)" (ionSlidesDidLoad)="slideChange(slides)">
+    <ion-slide *ngFor="let item of items">
+      {{item}}
+    </ion-slide>
+  </ion-slides>
+</div>

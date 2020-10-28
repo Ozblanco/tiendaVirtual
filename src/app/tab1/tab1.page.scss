@@ -17,8 +17,21 @@ ion-content {
 ion-slides{
     height: 100%;
 }
-
-
+.container__slide{
+    background: red;
+    width: 100%;
+    ion-slide{
+        width: 100%!important;
+    }
+}
+app-slider-inicio{
+    width: 100%;
+    background: green!important;
+}
+.first__slide{
+    display: flex;
+    align-items: start!important;
+}
 
 /* .gallery {
 	border: 1px solid lightgray;

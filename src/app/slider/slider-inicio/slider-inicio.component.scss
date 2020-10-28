@@ -16,3 +16,10 @@ ion-slides {
 .slade-full {
     height: 100% !important;
 }
+.container__slide{
+    background: red;
+    width: 100%;
+    ion-slide{
+        width: 100%!important;
+    }
+}
