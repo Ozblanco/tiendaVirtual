@@ -6,9 +6,9 @@ ion-segment-button{
     font-size: small;
 }
 
-ion-content {
+/* ion-content {
     --ion-background-color: #25C0F5;
-}
+} */
 
 ::-webkit-scrollbar {
     display: none;
@@ -18,7 +18,6 @@ ion-slides{
     height: 100%;
 }
 .container__slide{
-    background: red;
     width: 100%;
     ion-slide{
         width: 100%!important;
@@ -26,11 +25,11 @@ ion-slides{
 }
 app-slider-inicio{
     width: 100%;
-    background: green!important;
+    height: 200px;
 }
 .first__slide{
     display: flex;
-    align-items: start!important;
+    align-items: flex-start !important;
 }
 
 /* .gallery {

@@ -13,15 +13,24 @@ export class SliderInicioComponent implements OnInit {
     slidesPerView: 1,
     speed: 400,
   };
-  items:string[]=[
-    "SLIDE1",
-    "SLIDE2",
-    "SLIDE3",
-    "SLIDE4",
-  ]
+  slides: {img: string}[] = [
+    {
+      img: '/assets/slidesInicio/lays.jpg'
+    },
+    {
+      img: '/assets/slidesInicio/maggi.jpg'
+    },
+    {
+      img: '/assets/slidesInicio/maizena-660x371.jpg'
+    },
+    {
+      img: '/assets/slidesInicio/snacks.jpg'
+    }
+  ];
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   slideChange( slides: IonSlide){
 

@@ -17,12 +17,6 @@ export class Tab1Page implements OnInit{
     slidesPerView: 1,
     speed: 400,
   };
-  items:string[]=[
-    "SLIDE1",
-    "SLIDE2",
-    "SLIDE3",
-    "SLIDE4",
-  ]
   constructor() {}
 
   ngOnInit() {
