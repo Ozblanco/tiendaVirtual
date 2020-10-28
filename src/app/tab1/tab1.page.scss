@@ -1,0 +1,57 @@
+ion-segment{
+    --ion-color-primary: #FA7D12;
+}
+
+ion-segment-button{
+    font-size: small;
+}
+
+ion-content {
+    --ion-background-color: #25C0F5;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+ion-slides{
+    height: 100%;
+}
+
+
+
+/* .gallery {
+	border: 1px solid lightgray;
+	padding: 1rem;
+	display: flex;
+	height: 400px;
+}
+.container {
+  max-height: 500px;
+  overflow-x: scroll;
+  border: 1px solid gray;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  -ms-scroll-snap-points-x: repeat(3rem);
+      scroll-snap-points-x: repeat(3rem);
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+li {
+  margin-right: 30px;
+  //margin-left: 30px;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+          justify-content: center;
+  scroll-snap-align: start;
+} */

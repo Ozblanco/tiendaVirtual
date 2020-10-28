@@ -1,0 +1,56 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title color="dark">
+      <b>Buenas tardes</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-toolbar>
+  <ion-segment mod="md" scrollable (ionChange)="segmentChanged($event)" [(ngModel)]="segment">
+    <ion-segment-button value="0">
+      <ion-label>INICIO</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="1">
+      <ion-label>CATEGORÍAS</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="2">
+      <ion-label>PARA ÉL</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="3">
+      <ion-label>PARA ELLA</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="4">
+      <ion-label>DESTACADOS</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+<ion-content>
+  <!-- <ion-card>
+    <ion-card-title>
+      {{ page }}
+    </ion-card-title>
+  </ion-card> -->
+
+  <ion-slides class="slade-full" #slides pager="false" [options]="slideOpts" (ionSlideDidChange)="slideChange(slides)" (ionSlidesDidLoad)="slideChange(slides)">
+    <ion-slide>
+      <div>
+        <app-slider-inicio></app-slider-inicio>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <app-slider-categorias></app-slider-categorias>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 4</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 5</h1>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>
