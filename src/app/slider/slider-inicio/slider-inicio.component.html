@@ -1,60 +1,62 @@
-<div class="container__slide1">
-  <ion-slides pager="true" [options]="slideOptions">
-    <ion-slide *ngFor="let slide of slides">
-      <ion-card mode="ios">
-        <ion-avatar>
-          <img [src]="slide.img">
-        </ion-avatar>
-      </ion-card>
-    </ion-slide>
-  </ion-slides>
-</div>
-
-<div class="container__slide2">
-  <ion-slides [options]="slideOptions1">
-    <ion-slide *ngFor="let slide of slides">
-      <ion-card mode="ios">
-        <ion-avatar>
-          <img [src]="slide.img">
-        </ion-avatar>
-      </ion-card>
-    </ion-slide>
-  </ion-slides>
-</div>
-
-<div class="container__slide3">
-  <ion-avatar>
-    <img src="/assets/sorteo-banner.jpg">
-  </ion-avatar>
-</div>
-
-<div class="titulo">
-  <ion-title>
-    Destacados de la semana
-  </ion-title>
-</div>
-
-<div class="container__slide4">
-  <ion-slides [options]="slideOptions1">
-    <ion-slide *ngFor="let todo of todos">
-      <ion-card mode="ios">
-
-        <img [src]="todo.img">
-        <ion-card-header>
-          <ion-card-subtitle>{{ todo.marca }}</ion-card-subtitle>
-          <ion-card-title>{{ todo.name }}</ion-card-title>
-        </ion-card-header>
-
-        <ion-card-content>
-          <p>
-            <b style="font-size: 18px">S/ {{ todo.precio }}</b>
-          </p>
-        </ion-card-content>
-
-      </ion-card>
-    </ion-slide>
-  </ion-slides>
-</div>
+<ion-content>
+  <div class="container__slide1">
+    <ion-slides pager="true" [options]="slideOptions">
+      <ion-slide *ngFor="let slide of slides">
+        <ion-card mode="ios">
+          <ion-avatar>
+            <img [src]="slide.img">
+          </ion-avatar>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  
+  <div class="container__slide2">
+    <ion-slides [options]="slideOptions1">
+      <ion-slide *ngFor="let slide of slides">
+        <ion-card mode="ios">
+          <ion-avatar>
+            <img [src]="slide.img">
+          </ion-avatar>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  
+  <div class="container__slide3">
+    <ion-avatar>
+      <img src="/assets/sorteo-banner.jpg">
+    </ion-avatar>
+  </div>
+  
+  <div class="titulo">
+    <ion-title>
+      Destacados de la semana
+    </ion-title>
+  </div>
+  
+  <div class="container__slide4">
+    <ion-slides [options]="slideOptions1">
+      <ion-slide *ngFor="let todo of todos">
+        <ion-card mode="ios">
+  
+          <img [src]="todo.img">
+          <ion-card-header>
+            <ion-card-subtitle>{{ todo.marca }}</ion-card-subtitle>
+            <ion-card-title>{{ todo.name }}</ion-card-title>
+          </ion-card-header>
+  
+          <ion-card-content>
+            <p>
+              <b style="font-size: 18px">S/ {{ todo.precio }}</b>
+            </p>
+          </ion-card-content>
+  
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
 
 
 
