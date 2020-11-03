@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tiendavirtual-723c8": {
+      "hosting": {
+        "app": [
+          "tiendavirtual-723c8"
+        ]
+      }
+    }
+  }
+}

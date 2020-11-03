@@ -1,22 +1,89 @@
 ion-slides {
     height:100%;
     --ion-color-primary: #FA7D12;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
 } 
 
-.container__slide{
+.container__slide1 {
     width: 100%;
-    height: 100%;
+    height: 200px;
     ion-slide{
         width: 100%!important;
         height: 100%!important;
     }
+    ion-card {
+        width: 100%!important;
+        height: 100%!important;
+        margin-inline-start: 0px !important;
+        margin-inline-end: 0px !important;
+        box-shadow: #ffffff 0px 4px 16px !important;
+    }
+}
+.container__slide2 {
+    width: 100% !important;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    ion-card {
+        width: 100%!important;
+        height: 100%!important;
+        margin-inline-start: 0px !important;
+        margin-inline-end: 0px !important;
+        box-shadow: #ffffff 0px 4px 16px !important;
+    }
 }
 
-ion-card {
-    width: 100%!important;
-    height: 100%!important;
-    margin-inline-start: 12px !important;
-    margin-inline-end: 12px !important;
+.container__slide3 {
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    ion-card {
+        width: 100%!important;
+        height: 100%!important;
+        margin-inline-start: 0px !important;
+        margin-inline-end: 0px !important;
+        box-shadow: #ffffff 0px 4px 16px !important;
+    }
+}
+
+.container__slide4 {
+    width: 100%;
+    height: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    ion-card {
+        width: 100%!important;
+        height: 98%!important;
+        margin-inline-start: 0px !important;
+        margin-inline-end: 0px !important;
+        text-align: left;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
+    };
+    ion-card-subtitle {
+        text-transform: none;
+    }
+    ion-card-title {
+        font-size: 16px;
+    }
+    ion-card-content {
+        color: #D42615;
+    }
+}
+
+.titulo {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    ion-title {
+        padding-inline-start: 10px;
+        padding-inline-end: 10px;
+        text-align: start;
+        font-family: var(--ion-font-family, inherit);
+        font-weight: bold;
+        font-size: 18px;
+    }
 }
 
 ion-avatar {

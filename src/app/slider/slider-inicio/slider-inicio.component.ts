@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IonSlide } from '@ionic/angular';
+import { TodoService } from '../../services/todo.service';
 
 @Component({
   selector: 'app-slider-inicio',
@@ -9,9 +9,16 @@ import { IonSlide } from '@ionic/angular';
 export class SliderInicioComponent implements OnInit {
 
   slideOptions = {
+    spaceBetween: 10,
     initialSlide: 0,
     slidesPerView: 1,
-    speed: 400,
+    speed: 400
+  };
+  slideOptions1 = {
+    spaceBetween: 10,
+    initialSlide: 0,
+    slidesPerView: 1.5,
+    speed: 400
   };
   slides: {img: string}[] = [
     {
@@ -27,13 +34,20 @@ export class SliderInicioComponent implements OnInit {
       img: '/assets/slidesInicio/snacks.jpg'
     }
   ];
-  constructor() { }
+  sorteo: {img1: string}[] = [
+    {
+      img1: '/assets/sorteo-banner.jpg'
+    }
+  ];
+
+  todos: any = [];
+
+  constructor(private todoService: TodoService) { }
 
   ngOnInit() {
-  }
-
-  slideChange( slides: IonSlide){
-
+    this.todoService.getTodos().subscribe(productos => {
+      this.todos = productos;
+    });
   }
 
 }
